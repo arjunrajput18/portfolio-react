@@ -1,9 +1,22 @@
-
-import './App.css';
-
+import Home from "./Component/Home";
+import {BrowserRouter,Routes,Route} from "react-router-dom";
+import Projects from "./Component/Projects";
+import Blogs from "./Component/Blogs";
+import Navbar from "./Component/Navbar";
+import Footer from "./Component/Footer";
 function App() {
   return (
-    <h1>hii</h1>
+    <>
+    <BrowserRouter>
+    <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="projects" element={<Projects/>}/>
+        <Route path="blogs"  element={<Blogs/>} />
+      </Routes>
+      <Footer/>
+    </BrowserRouter>
+    </>
   );
 }
 
