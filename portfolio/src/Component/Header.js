@@ -1,10 +1,14 @@
 import React from 'react';
 
-const Header = () => {
+const Header = ({img,txt,htxt}) => {
     return (
-        <div>
-            <h1>HeaderComponent</h1>
-        </div>
+        <header className='hero'>
+            <img className='hero-img' src={img} alt="hero img"/>
+            <h1 className='hero-heading'>
+                {txt}
+                <span style={{color:"#1d4ed8"}}>{htxt}</span>
+            </h1>
+        </header>
     );
 };
 
