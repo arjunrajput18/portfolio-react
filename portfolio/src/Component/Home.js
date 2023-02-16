@@ -1,11 +1,12 @@
-import React from 'react';
-
+import React from "react";
+import img from "./images/img.svg";
+import Header from "./Header";
 const Home = () => {
-    return (
-        <div>
-          <h1>HomeComponent</h1>  
-        </div>
-    );
+  return (
+    <>
+      <Header img={img} txt="Arjunsingh Rajput " htxt="Web Developer" />
+    </>
+  );
 };
 
-export default Home;<h1>HomeComponent</h1>
+export default Home;
